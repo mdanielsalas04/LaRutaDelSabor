@@ -39,4 +39,10 @@
     <color name="dividerLight">#E1D9D4</color>
     <color name="dividerDark">#C7B9B2</color>
 
+    <!-- COLORES -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

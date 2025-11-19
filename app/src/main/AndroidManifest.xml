@@ -11,42 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LaRutaDelSabor">
-
-        <!-- LoginActivity -->
         <activity
-            android:name=".auth.LoginActivity"
+            android:name=".admin.pages.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".usuario.auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- RegisterActivity -->
         <activity
-            android:name=".auth.RegisterActivity"
+            android:name=".usuario.auth.RegisterActivity"
             android:exported="false" />
-
-        <!-- HomeActivity -->
         <activity
-            android:name=".tabs.HomeActivity"
+            android:name=".usuario.tabs.HomeActivity"
             android:exported="false" />
-
-        <!-- DetalleRutaActivity -->
         <activity
-            android:name=".detalle.DetalleRutaActivity"
+            android:name=".usuario.detalle.DetalleRutaActivity"
             android:exported="false" />
-
-        <!-- DetalleSubrutaActivity -->
         <activity
-            android:name=".detalle.DetalleSubrutaActivity"
+            android:name=".usuario.detalle.DetalleFeriaActivity"
             android:exported="false" />
-
-        <!-- DetalleFeriaActivity -->
-        <activity
-            android:name=".detalle.DetalleFeriaActivity"
-            android:exported="false" />
-
+        <activity android:name=".admin.pages.AdminFeriasListActivity"/>
     </application>
 
 </manifest>

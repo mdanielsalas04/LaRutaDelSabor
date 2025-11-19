@@ -5,22 +5,22 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.larutadelsabor.tabs.HomeFragment"
+        android:name="com.example.larutadelsabor.usuario.tabs.HomeFragment"
         android:label="Inicio" />
 
     <fragment
         android:id="@+id/nav_mapa"
-        android:name="com.example.larutadelsabor.tabs.MapaFragment"
+        android:name="com.example.larutadelsabor.usuario.tabs.MapaFragment"
         android:label="Mapa" />
 
     <fragment
         android:id="@+id/nav_favoritos"
-        android:name="com.example.larutadelsabor.tabs.FavoritosFragment"
+        android:name="com.example.larutadelsabor.usuario.tabs.FavoritosFragment"
         android:label="Favoritos" />
 
     <fragment
         android:id="@+id/nav_perfil"
-        android:name="com.example.larutadelsabor.tabs.PerfilFragment"
+        android:name="com.example.larutadelsabor.usuario.tabs.PerfilFragment"
         android:label="Perfil" />
 
 </navigation>

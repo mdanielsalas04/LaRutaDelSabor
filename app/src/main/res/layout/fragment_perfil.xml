@@ -89,31 +89,6 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <!-- Ayuda -->
-            <LinearLayout
-                android:id="@+id/optAyuda"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:background="@color/colorCardBackground"
-                android:layout_marginVertical="4dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:src="@drawable/ic_help"
-                    app:tint="@color/colorPrimary"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"/>
-
-                <TextView
-                    android:text="Ayuda"
-                    android:textColor="@color/textPrimary"
-                    android:textSize="16sp"
-                    android:layout_marginStart="12dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </LinearLayout>
-
             <!-- Privacidad -->
             <LinearLayout
                 android:id="@+id/optPrivacidad"
@@ -163,6 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
+
         </LinearLayout>
 
         <!-- Cerrar sesión -->
@@ -174,6 +150,15 @@
             android:textColor="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <!-- Boton temporal de admin -->
+        <Button
+            android:id="@+id/btnTestAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[DEV] Entrar como Admin"
+            android:backgroundTint="@color/textSecondary"
+            android:layout_marginTop="24dp"/>
 
     </LinearLayout>
 </ScrollView>
