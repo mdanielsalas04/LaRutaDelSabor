@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PALETA PRINCIPAL -->
+    <color name="colorPrimary">#4D3B2F</color>
+    <color name="colorPrimaryDark">#3B2C23</color>
+    <color name="colorPrimaryLight">#6F574B</color>
+
+    <color name="colorSecondary">#D49A6A</color>
+    <color name="colorSecondaryLight">#B8F2CAA7</color>
+    <color name="colorSecondaryDark">#A6764E</color>
+
+    <!-- FONDOS -->
+    <color name="colorBackground">#FBF6F1</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+
+    <!-- TEXTO -->
+    <color name="textPrimary">#2E2C2B</color>
+    <color name="textSecondary">#6E6A68</color>
+    <color name="textHint">#A39C99</color>
+
+    <!-- ESPECIALES -->
+    <color name="accent">#F2CAA7</color>
+    <color name="error">#D9534F</color>
+
+    <!-- Bottom nav -->
+    <color name="bn_inactive">#A39C99</color>
+    <color name="bn_active">#4D3B2F</color>
+
+    <!-- NUEVOS COLORES PARA TABS / SELECTOR EEDCC8 F6EFE9 -->
+    <color name="colorSelectedTab">#EBC095</color>
+    <color name="colorUnselectedTab">#18F6F2EF</color>
+
+    <!-- COLORES PARA EFECTOS -->
+    <color name="colorPressed">#CF3A2A21</color>
+    <color name="colorRippleLight">#26D49A6A</color>
+
+    <!-- LÍNEAS / BORDES -->
+    <color name="dividerLight">#E1D9D4</color>
+    <color name="dividerDark">#C7B9B2</color>
+
+</resources>

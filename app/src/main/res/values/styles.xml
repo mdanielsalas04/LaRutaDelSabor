@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BOTÓN PRINCIPAL -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- BOTÓN SECUNDARIO (MENOS LLAMATIVO) -->
+    <style name="SecondaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- TARJETA GENERAL -->
+    <style name="CardDefault" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:background">@color/colorCardBackground</item>
+    </style>
+
+    <!-- TÍTULOS DE SECCIÓN -->
+    <style name="TitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- INPUTS -->
+    <style name="InputField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/textSecondary</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_perfil"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:background="@color/colorSecondaryLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPerfil"
+                android:src="@drawable/ic_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_circle_white"
+                android:padding="12dp"
+                android:contentDescription="Foto de perfil" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:text="Nombre del Usuario"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:text="correo@ejemplo.com"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Sección de opciones -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Opciones"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Editar Perfil -->
+            <LinearLayout
+                android:id="@+id/optEditarPerfil"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/colorCardBackground"
+                android:layout_marginVertical="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/colorPrimary"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+                <TextView
+                    android:text="Editar perfil"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Ayuda -->
+            <LinearLayout
+                android:id="@+id/optAyuda"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/colorCardBackground"
+                android:layout_marginVertical="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_help"
+                    app:tint="@color/colorPrimary"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+                <TextView
+                    android:text="Ayuda"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Privacidad -->
+            <LinearLayout
+                android:id="@+id/optPrivacidad"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/colorCardBackground"
+                android:layout_marginVertical="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_privacy"
+                    app:tint="@color/colorPrimary"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+                <TextView
+                    android:text="Privacidad y términos"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Acerca de -->
+            <LinearLayout
+                android:id="@+id/optAcerca"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/colorCardBackground"
+                android:layout_marginVertical="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_info"
+                    app:tint="@color/colorPrimary"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+                <TextView
+                    android:text="Acerca de"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Cerrar sesión -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="Cerrar sesión"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/error"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

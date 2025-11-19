@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.LaRutaDelSabor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Colores base -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+
+        <!-- Color del status bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+        <!-- Inputs -->
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MaterialComponents.TextInputEditText</item>
+
+        <!-- Fuente global -->
+        <item name="android:fontFamily">@font/nunito</item>
+
+        <!-- Texto -->
+        <item name="android:textColor">@color/textPrimary</item>
+
+        <!-- Iconos -->
+        <item name="android:tint">@color/colorPrimary</item>
+
+    </style>
+
+</resources>

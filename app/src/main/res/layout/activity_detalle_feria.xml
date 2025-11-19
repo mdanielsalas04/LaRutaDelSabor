@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detalle_feria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/imgFeriaDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_placeholder"/>
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtFeriaTituloDetalle"
+            android:layout_marginTop="16dp"
+            android:text="Feria del Tamal 2025"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/textPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Fecha -->
+        <TextView
+            android:id="@+id/txtFeriaFechaDetalle"
+            android:layout_marginTop="4dp"
+            android:text="Del 02 al 12 de Febrero"
+            android:textSize="16sp"
+            android:textColor="@color/colorSecondaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/txtFeriaDescDetalle"
+            android:layout_marginTop="12dp"
+            android:text="Descripción completa de la feria..."
+            android:textSize="16sp"
+            android:textColor="@color/textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Actividades -->
+        <TextView
+            android:layout_marginTop="18dp"
+            android:text="Actividades"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/textPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvActividades"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

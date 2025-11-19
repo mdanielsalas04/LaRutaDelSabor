@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detalle_ruta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen principal -->
+        <ImageView
+            android:id="@+id/imgRutaDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_placeholder"/>
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtRutaTituloDetalle"
+            android:layout_marginTop="16dp"
+            android:text="Ruta Gastronómica Tradicional"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/textPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/txtRutaDescripcionDetalle"
+            android:layout_marginTop="8dp"
+            android:text="Descripción detallada de la ruta..."
+            android:textSize="16sp"
+            android:textColor="@color/textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Subrutas -->
+        <TextView
+            android:layout_marginTop="18dp"
+            android:text="Subrutas incluidas"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/textPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSubrutas"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
