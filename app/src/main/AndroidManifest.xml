@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaRutaDelSabor">
         <activity
+            android:name=".admin.pages.FormularioFeriaActivity"
+            android:exported="false" />
+        <activity
             android:name=".admin.pages.AdminRutasListActivity"
             android:exported="false" />
         <activity
