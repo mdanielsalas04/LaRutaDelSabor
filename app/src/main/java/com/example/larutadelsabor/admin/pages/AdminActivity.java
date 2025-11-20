@@ -38,8 +38,8 @@ public class AdminActivity extends AppCompatActivity {
         cardRutas.setOnClickListener(v -> {
             // TODO: Navegar a la lista de gestión de rutas
             Toast.makeText(this, "Abriendo gestión de Rutas...", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(this, AdminRutasListActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, AdminRutasListActivity.class);
+            startActivity(intent);
         });
 
         btnExit.setOnClickListener(v -> {

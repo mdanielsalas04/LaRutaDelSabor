@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaRutaDelSabor">
         <activity
+            android:name=".admin.pages.AdminRutasListActivity"
+            android:exported="false" />
+        <activity
             android:name=".admin.pages.AdminActivity"
             android:exported="false" />
         <activity
@@ -35,7 +38,7 @@
         <activity
             android:name=".usuario.detalle.DetalleFeriaActivity"
             android:exported="false" />
-        <activity android:name=".admin.pages.AdminFeriasListActivity"/>
+        <activity android:name=".admin.pages.AdminFeriasListActivity" />
     </application>
 
 </manifest>

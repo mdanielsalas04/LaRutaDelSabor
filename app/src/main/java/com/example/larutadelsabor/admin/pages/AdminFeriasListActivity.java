@@ -3,6 +3,7 @@ package com.example.larutadelsabor.admin.pages;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
@@ -32,7 +33,7 @@ public class AdminFeriasListActivity extends AppCompatActivity {
     private FirebaseFirestore db;
     private List<Feria> listaFerias = new ArrayList<>();
     private AdminFeriaAdapter adapter;
-    private View btnVolver;
+    private LinearLayout btnVolver;
 
 
     @Override
