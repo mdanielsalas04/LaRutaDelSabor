@@ -30,14 +30,12 @@ public class AdminActivity extends AppCompatActivity {
         // Eventos
         cardFerias.setOnClickListener(v -> {
             // TODO: Navegar a la lista de gestión de ferias
-            Toast.makeText(this, "Abriendo gestión de Ferias...", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(AdminActivity.this, AdminFeriasListActivity.class);
             startActivity(intent);
         });
 
         cardRutas.setOnClickListener(v -> {
             // TODO: Navegar a la lista de gestión de rutas
-            Toast.makeText(this, "Abriendo gestión de Rutas...", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, AdminRutasListActivity.class);
             startActivity(intent);
         });
