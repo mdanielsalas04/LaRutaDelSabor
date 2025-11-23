@@ -1,5 +1,6 @@
-package com.example.larutadelsabor.usuario.auth;
+package com.example.larutadelsabor.admin.pages;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,19 +14,19 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.larutadelsabor.R;
-import com.example.larutadelsabor.usuario.tabs.HomeActivity;
 
-public class LoginActivity extends AppCompatActivity {
+public class AdminLogin extends AppCompatActivity {
 
     // Variables
     private Button Entrar;
     private TextView tvRegister;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_admin_login);
 
         // Vinculación de variables
         Entrar = findViewById(R.id.btnEntrarAdmin);
@@ -35,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         Entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                Intent intent = new Intent(AdminLogin.this, AdminActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -45,12 +46,12 @@ public class LoginActivity extends AppCompatActivity {
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                Intent intent = new Intent(AdminLogin.this, RegistrarAdmin.class);
                 startActivity(intent);
             }
         });
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_login), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_admin_login), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;

@@ -42,6 +42,9 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    implementation("com.google.firebase:firebase-auth")
+
+
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
 
@@ -54,5 +57,6 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:2.7.5")
     implementation("androidx.navigation:navigation-ui:2.7.5")
     implementation("com.google.android.material:material:1.12.0")
+
 
 }

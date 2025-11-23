@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <style name="Theme.LaRutaDelSabor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
-        <!-- Colores base -->
+        <!-- Colores principales -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorSecondary">@color/colorSecondary</item>
+
+        <!-- Fondo global -->
         <item name="android:colorBackground">@color/colorBackground</item>
 
-        <!-- Color del status bar -->
+        <!-- Status bar -->
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-
-        <!-- Inputs -->
-        <item name="materialThemeOverlay">@style/ThemeOverlay.MaterialComponents.TextInputEditText</item>
 
         <!-- Fuente global -->
         <item name="android:fontFamily">@font/nunito</item>
 
-        <!-- Texto -->
+        <!-- Color de texto por defecto -->
         <item name="android:textColor">@color/textPrimary</item>
 
-        <!-- Iconos -->
-        <item name="android:tint">@color/colorPrimary</item>
+        <!-- Quitar: android:tint (CAUSA ERRORES) -->
+        <!-- Los iconos se deben tintar por elemento -->
 
     </style>
 

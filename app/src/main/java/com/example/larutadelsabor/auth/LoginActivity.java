@@ -28,8 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         // Vinculación de variables
-        Entrar = findViewById(R.id.btnEntrar);
-        tvRegister = findViewById(R.id.tvRegister);
+        Entrar = findViewById(R.id.btnEntrarAdmin);
+        tvRegister = findViewById(R.id.registraradmin);
 
         // Evento botón Entrar
         Entrar.setOnClickListener(new View.OnClickListener() {
