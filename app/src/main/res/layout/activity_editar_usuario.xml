@@ -34,7 +34,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_arrow_back"
-                    android:tint="@color/textPrimary" />
+                    app:tint="@color/textPrimary" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
                     android:background="@drawable/bg_circle_primary"
                     android:padding="8dp"
                     android:src="@drawable/ic_camera"
-                    android:tint="@android:color/white" />
+                    app:tint="@android:color/white" />
             </FrameLayout>
 
             <!-- ESPACIO -->
