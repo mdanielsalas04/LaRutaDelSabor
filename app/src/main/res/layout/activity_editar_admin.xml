@@ -63,7 +63,7 @@
                     android:id="@+id/imgPerfil"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_user"
+                    android:src="@drawable/ic_profile"
                     android:scaleType="centerCrop"
                     android:background="@drawable/circle_mask"
                     android:clipToOutline="true" />

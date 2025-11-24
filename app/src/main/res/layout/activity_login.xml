@@ -20,7 +20,7 @@
             android:layout_height="110dp"
             android:layout_marginTop="48dp"
             android:src="@drawable/ic_plant"
-            android:tint="@color/textPrimary"/>/>
+            app:tint="@color/textPrimary" />
 
         <!-- Título -->
         <TextView

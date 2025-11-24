@@ -48,14 +48,17 @@
     </LinearLayout>
 
     <!-- RecyclerView -->
+
+    <!-- FAB para agregar -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvAdminRutas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="72dp"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        app:layout_anchor="@+id/rvAdminRutas"
+        app:layout_anchorGravity="center" />
 
-    <!-- FAB para agregar -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddRuta"
         android:layout_width="wrap_content"

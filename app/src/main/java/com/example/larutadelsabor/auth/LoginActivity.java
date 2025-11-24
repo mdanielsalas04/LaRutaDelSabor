@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.larutadelsabor.R;
-import com.example.larutadelsabor.tabs.HomeActivity;
+import com.example.larutadelsabor.usuario.tabs.HomeActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
