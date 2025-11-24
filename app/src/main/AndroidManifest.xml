@@ -11,18 +11,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LaRutaDelSabor">
+
+        <!-- ESTA SERÁ LA PRIMERA PANTALLA -->
         <activity
             android:name=".tabs.inicio"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".admin.pages.PrivacidadYTerminos"
             android:exported="false" />
+
+        <activity android:name=".admin.pages.AcercaDe"
+            android:exported="false" />
+
+        <activity android:name=".usuario.auth.EditarUsuario"
+            android:exported="false" />
+
+        <activity android:name=".admin.pages.AdminLogin"
+            android:exported="false" />
+
+        <activity
+            android:name=".admin.pages.EditarAdmin"
+            android:exported="false" />
+
         <activity
             android:name=".admin.pages.RegistrarAdmin"
             android:exported="false" />
-        <activity
-            android:name=".admin.pages.AdminLogin"
-            android:exported="false" />
-        <activity
-            android:name=".admin.pages.LoginAdmin"
-            android:exported="false" />
+
         <activity
             android:name=".admin.pages.FormularioFeriaActivity"
             android:exported="false" />
@@ -31,16 +51,10 @@
             android:exported="false" />
         <activity
             android:name=".admin.pages.AdminActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- LOGIN DEL USUARIO -->
         <activity
             android:name=".usuario.auth.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".usuario.auth.RegisterActivity"
             android:exported="false" />

@@ -37,12 +37,16 @@ public class inicio extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(inicio.this, AdminLogin.class);
+                startActivity(intent);
+
             }
         });
         usuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(inicio.this, LoginActivity.class);
+                startActivity(intent);
+
             }
         });
 

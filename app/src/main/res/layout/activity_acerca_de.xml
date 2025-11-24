@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_acerca_de"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_plant"
+            android:tint="@color/textPrimary" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Acerca de"
+            android:textAppearance="@style/TitleText" />
+
+        <!-- Nombre de la app -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="La Ruta del Sabor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:text="La Ruta del Sabor es una aplicación diseñada para apoyar a los turistas en la localización de rutas y ubicaciones de ferias gastronómicas típicas, tales como la tradicional Feria del Chile en Nogada. Su propósito es ofrecer una experiencia clara y accesible, evitando que los visitantes se desorienten y facilitando su recorrido por los destinos culinarios más representativos." />
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/textSecondary" />
+
+        <!-- Equipo desarrollador -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Desarrollado por:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/textSecondary"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:text="• Marcos Daniel Salas de Gabriel
+• Fatima Sánchez Tlaxcaltecatl
+• Ana Karen Pano Toxqui
+
+Estudiantes de la Universidad Politécnica de Puebla." />
+
+        <!-- Versión -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/textSecondary"
+            android:textSize="14sp"
+            android:text="Versión 1.0.0" />
+
+        <!-- Espacio final -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>

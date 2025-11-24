@@ -14,6 +14,7 @@
         android:padding="32dp"
         android:gravity="center_horizontal">
 
+
         <!-- Logo -->
         <ImageView
             android:layout_width="110dp"
@@ -38,6 +39,15 @@
             android:text="Inicia sesión para continuar"
             android:textColor="@color/textSecondary"
             android:textSize="14sp" />
+
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Administrador"
+            android:textAppearance="@style/TitleText" />
 
         <!-- FORM -->
         <LinearLayout
